@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F4F6F9;
+    color: #2C3E50;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid #eaeaea;
+}
+
+.datetime {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    color: #D98C2E;
+    background: #F0F0F0;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 50px;
+}
+
+.profil-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #D98C2E;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADER ===== */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #2C3E50;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #5A6A7E;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #4A5568;
+}
+
+.contact-info span {
+    background: #F0F3F8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+h1, h2, h3, h4 {
+    color: #D98C2E;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 10px;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #2C3E50;
+}
+
+/* ===== KEALHIAN (SKILL GRID) ===== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    align-items: start;          /* Kunci: semua kolom mulai dari atas */
+    margin-top: 10px;
+}
+
+.skill-category {
+    background: #F8FAFB;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #eee;
+    height: 100%;               /* Membuat tinggi kartu seragam */
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #D98C2E;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.skill-category ul li {
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.skill-category ul li:last-child {
+    border-bottom: none;
+}
+
+.skill-category ul li::before {
+    content: "•";
+    color: #D98C2E;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -0.2em;
+}
+
+.exp-item {
+    margin-bottom: 25px;
+}
+
+.exp-item h3 {
+    margin-bottom: 4px;
+    color: #D98C2E;
+}
+
+.exp-item .year {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.exp-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+.exp-item ul li {
+    margin-bottom: 4px;
+}
+
+.edu-item {
+    margin-bottom: 20px;
+}
+
+.edu-item h3 {
+    margin-bottom: 4px;
+}
+
+.edu-item .year {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #F8FAFB;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #D98C2E;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #2C3E50;
+    margin-bottom: 16px;
+}
+
+.tag {
+    display: inline-block;
+    background: #E8EDF2;
+    color: #2C3E50;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #D98C2E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.gallery-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #F0F0F0;
+    color: #D98C2E;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.gallery-btn:hover {
+    background: #D98C2E;
+    color: white;
+}
+
+/* ===== HALAMAN DETAIL PEKERJAAN ===== */
+.job-detail p,
+.job-tasks ul {
+    color: #2C3E50;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.job-tasks ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.job-tasks ul li {
+    margin-bottom: 8px;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 15px 0 30px;
+}
+
+/* Jika ada section baru di detail page */
+section + section {
+    margin-top: 40px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background: #F0F3F8;
+    color: #D98C2E;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #D98C2E;
+    color: white;
+}
+
+/* ===== TOMBOL VIDEO ===== */
+.video-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-links h3 {
+    margin-bottom: 15px;
+    color: #D98C2E;
+}
+
+.video-btn {
+    display: inline-block;
+    background: #D98C2E;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+    margin: 5px;
+}
+
+.video-btn:hover {
+    background: #b87a1f;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 24px 16px;
+        border-radius: 12px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .project-grid,
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .datetime {
+        font-size: 0.85rem;
+    }
+
+    .profil-img {
+        width: 100px;
+        height: 100px;
+    }
+}
